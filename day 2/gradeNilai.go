@@ -34,7 +34,15 @@ func main() {
 		gradeNilai = "Invalid"
 	}
 
+	fmt.Println("Hasil capaian siswa===========")
+	var ket string
+	if gradeNilai == "E" {
+		ket = "tidak lulus"
+	} else {
+		ket = "lulus"
+	}
 	//output
 	fmt.Printf("Nama Siswa: %s", namaSiswa)
 	fmt.Printf("\nGrade Nilai: %s", gradeNilai)
+	fmt.Printf("keterangan %s", ket)
 }
