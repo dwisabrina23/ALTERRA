@@ -34,6 +34,7 @@ func main() {
 		gradeNilai = "Invalid"
 	}
 
+	fmt.Println("Hasil capaian siswa===========")
 	//output
 	fmt.Printf("Nama Siswa: %s", namaSiswa)
 	fmt.Printf("\nGrade Nilai: %s", gradeNilai)
