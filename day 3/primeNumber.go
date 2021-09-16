@@ -9,9 +9,18 @@ import (
 	"math"
 )
 
+//fungsi print bilangan prima dengan range 0-n
+func printPrime(nrange int) {
+	for i := 0; i <= nrange; i++ {
+		if isPrime(i) {
+			fmt.Println(i)
+		}
+	}
+}
+
 //fungsi cek bilangan prima
 func isPrime(number int) bool {
-	if number < 0 {
+	if number < 1 {
 		return false
 	} else if number == 2 {
 		return true
@@ -45,4 +54,6 @@ func main() {
 	} else {
 		fmt.Println("Bukan Prima")
 	}
+
+	printPrime(10)
 }
