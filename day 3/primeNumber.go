@@ -20,7 +20,7 @@ func printPrime(nrange, mrange int) {
 
 //fungsi cek bilangan prima
 func isPrime(number int) bool {
-	if number < 1 {
+	if number < 2 {
 		return false
 	} else if number == 2 {
 		return true
