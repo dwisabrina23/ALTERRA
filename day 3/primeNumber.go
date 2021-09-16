@@ -11,11 +11,14 @@ import (
 
 //fungsi print bilangan prima dengan range n-m
 func printPrime(nrange, mrange int) {
+	sum := 0
 	for i := nrange; i <= mrange; i++ {
 		if isPrime(i) {
 			fmt.Println(i)
+			sum += 1
 		}
 	}
+	fmt.Printf("Jumlah bilangan prima dari %d sampai %d adalah %d", nrange, mrange, sum)
 }
 
 //fungsi cek bilangan prima
