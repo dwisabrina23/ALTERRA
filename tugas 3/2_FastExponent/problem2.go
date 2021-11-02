@@ -8,7 +8,7 @@ func pow(x, n int) int {
 	}
 	temp := pow(x, n/2)
 	temp *= temp
-	if n == 2 {
+	if n%2 == 1 {
 		temp *= x
 	}
 	return temp

@@ -9,18 +9,6 @@ import (
 	"math"
 )
 
-//fungsi print bilangan prima dengan range n-m
-func printPrime(nrange, mrange int) {
-	sum := 0
-	for i := nrange; i <= mrange; i++ {
-		if isPrime(i) {
-			fmt.Println(i)
-			sum += 1
-		}
-	}
-	fmt.Printf("Jumlah bilangan prima dari %d sampai %d adalah %d", nrange, mrange, sum)
-}
-
 //fungsi cek bilangan prima
 func isPrime(number int) bool {
 	if number < 2 {
@@ -28,7 +16,6 @@ func isPrime(number int) bool {
 	} else if number == 2 {
 		return true
 	}
-
 	//jika bil yg dimasukkan lebih dari 2
 	var i int = 2
 	batas := math.Sqrt(float64(number))
@@ -57,6 +44,4 @@ func main() {
 	} else {
 		fmt.Println("Bukan Prima")
 	}
-
-	printPrime(10, 50)
 }
